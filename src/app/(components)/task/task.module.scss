@@ -1,0 +1,50 @@
+.small_desc {
+  font-size: 12px;
+}
+
+.task {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: var(--space-md) 1fr 50px;
+  column-gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+  background: var(--secondary-color);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  &:hover {
+    box-shadow: 0 0 4px 0 var(--button-primary-bg);
+  }
+}
+
+.done_task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task_action {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: var(--space-md) ;
+}
+
+.delete_button {
+  color: var(--accent-color);
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover svg{
+    filter: drop-shadow(0 0 4px var(--accent-color));
+  }
+}
+
+.edit_button {
+  color: var(--info-color);
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  background: none;
+  &:hover svg{
+    filter: drop-shadow(0 0 4px var(--info-color));
+  }
+}

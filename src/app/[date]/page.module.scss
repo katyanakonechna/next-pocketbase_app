@@ -1,0 +1,29 @@
+.container{
+    margin: var(--space-xl) auto;
+    max-width: 1000px;
+    min-height: 200px;
+    background: transparent;
+    border: 1px solid var(--background-light);
+    border-radius: 4px;
+    box-shadow: 0 0 4px 0 var(--primary-text);
+}
+
+.container_head {
+    background: var(--secondary-color);
+    color: var(--primary-text);
+    font-family: var(--font-mono);
+    padding: var(--space-sm);
+    border-bottom: 1px solid var(--background-light);
+}
+
+.tasks_list {
+    list-style: none;
+    margin: var(--space-sm);
+}
+
+.no_tasks {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
